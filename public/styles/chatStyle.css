@@ -1,0 +1,70 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.primary-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: black;
+}
+
+.secondary-video {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  margin: 16px;
+  border-radius: 16px;
+  object-fit: cover;
+  background-color: grey;
+}
+
+/* #endCall {
+  position: absolute;
+  font-size: xx-large;
+  top: 90%;
+  left: 50%;
+} */
+
+.video {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.call_footer {
+  position: absolute;
+  font-size: xxx-large;
+  top: 90%;
+  padding-left: 40px;
+}
+
+
+
+:root {
+  --background-opcacity: rgb(255 255 255 / 80%);
+  --preview-img-blur: blur(3px);
+  --preview-img-width: 250px;
+}
+
+.preiview-img {
+filter: var(--preview-img-blur);
+width: var(--preview-img-width);
+}
+
+.preiview-video {
+filter: var(--preview-img-blur);
+width: var(--preview-img-width);
+}
+
+.action-container {
+  background-color: var(--background-opcacity);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

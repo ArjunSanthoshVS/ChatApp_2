@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/chatStyle.css">
+    <title>Chat System</title>
+
+    <!-- <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io.connect('http://localhost:3000');
+    </script> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://chat-service-fhbc.onrender.com/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io.connect('https://chat-service-fhbc.onrender.com');
+    </script>
+
+    <script src="https://kit.fontawesome.com/e3ae8df40e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="CallBody" style="display:block;justify-content:space-around;margin:0px">
+        <div class="primary-video" id="remoteVideo"></div>
+        <div class="secondary-video" id="localVideo"></div>
+        <div class="call_footer mx-auto">
+            <i class="fa-solid fa-circle-xmark" id="endCall" style="color: #ff7070;"></i>
+            <i class="fa-solid fa-microphone-slash" id="muteButton" style="color: #ffffff;"></i>
+            <i class="fa-solid fa-video-slash" id="videoPauseButton" style="color: #ffffff;"></i>
+            <i class="fa-solid fa-camera-rotate" id="switchCameraButton" style="color: #ffffff;"></i>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
+    <script src="scripts/call.js"></script>
+    <script src="scripts/pagereload.js"></script>
+</body>
+
+
+</html>
