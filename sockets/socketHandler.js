@@ -104,6 +104,7 @@ module.exports = {
                 if (senderSocketId || receiverSocketId) {
                     socket.to(receiverSocketId).emit('receive_location', content);
                 } else {
+                    
                     console.log('Sender or receiver not found');
                 }
             });
